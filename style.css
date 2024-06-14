@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 5;
+    background-color:rgb(165, 240, 175);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url('jjjj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-header {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    text-shadow: 3px 3px 3px black;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '⭐';
+    display: inline-block;
+    top: 75%;
+    transform: translateY(-90%);
+    font-size: 20px;
+}
+
+.main-header::before {
+    position: absolute;
+    left: -30px;
+}
+
+.main-header::after {
+    position: absolute;
+    right: -30px;
+}
+
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+}
+.intro-paragraph2 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+}
+.intro-paragraph3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    font-size: 1.5em;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+}
+
+.intro-paragraph::before {
+    left: -20px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: -20px;
+}
+
+p {
+    font-family: courier;
+    text-shadow:  1px 1px 1px black;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    padding-bottom: 0px;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+.cta-button {
+    display: flex;
+    font-size: 2.5em;
+    color: #fff;
+    background-color: #aa53dd;
+    border-radius: 40%;
+    cursor: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+   
+}
+
+.cta-button::before,
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.cta-button::before {
+    content: '👉';
+    left: -50px;
+}
+
+.cta-button::after {
+    content: '👈';
+    right: -50px;
+}
